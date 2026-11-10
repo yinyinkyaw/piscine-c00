@@ -1,0 +1,11 @@
+#include <unistd.h>
+
+void ft_print_alphabet(void)
+{
+  char character = 'z';
+  while (character >= 'a')
+  {
+    write(1, &character, 1);
+    character += 1;
+  }
+}
